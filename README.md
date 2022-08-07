@@ -1,6 +1,6 @@
-#Tokyo-Sharehouse-Dataset
+# Tokyo-Sharehouse-Dataset
 
-##Config file
+## Config file
 
 A config files is the region json file that contains the information of all the region.
 He was created to avoid repetion of request that can take a long time.
