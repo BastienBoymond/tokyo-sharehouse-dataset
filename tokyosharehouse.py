@@ -2,8 +2,8 @@ from region import Region
 
 class TokyoShareHouse:
     url = 'https://tokyosharehouse.com/eng/'
-    region = []
+    allregions = []
 
     def __init__(self):
         region = Region();
-        self.region = region.get_regions();
+        self.allregions = region.get_regions();
