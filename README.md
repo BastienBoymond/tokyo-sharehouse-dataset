@@ -9,6 +9,6 @@ Website url I used:
 
 Get the ShareHouse: https://www.tokyosharehouse.com/
 <br>
-Get the University: ttps://www.4icu.org/jp/tokyo/a-z/
+Get the University: https://www.4icu.org/jp/tokyo/a-z/
 <br>
 Get the Gps coordinates: https://nominatim.openstreetmap.org/search?q=[A_PLACE_TO_BE]&format=json
