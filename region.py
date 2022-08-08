@@ -1,5 +1,3 @@
-from turtle import pen
-
 
 class Region:
     url = 'https://tokyosharehouse.com/eng/area/'
