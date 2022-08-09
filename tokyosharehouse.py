@@ -1,4 +1,3 @@
-from pydoc import pager
 from region import Region
 
 class TokyoShareHouse:

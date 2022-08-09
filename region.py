@@ -1,4 +1,3 @@
-
 class Region:
     url = 'https://tokyosharehouse.com/eng/area/'
     region = []

@@ -1,4 +1,3 @@
-
 class ShareHouse:
     priceAverage : int = 0;
     FeeAverage : int = 0;
