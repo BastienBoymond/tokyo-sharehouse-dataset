@@ -1,3 +1,5 @@
+from request_and_scrap import return_soup
+
 class Region:
     url = 'https://tokyosharehouse.com/eng/area/'
     region = []
@@ -25,10 +27,7 @@ class Region:
             return json.load(f)
     
     def get_all_region(self):
-        import requests
-        from bs4 import BeautifulSoup
-        r = requests.get(self.url)
-        soup = BeautifulSoup(r.text, 'html.parser')
+        soup = return_soup(self.url)
         for area in soup.find_all('div', class_='ar'):
             if area.find('a') is None:
                 continue;

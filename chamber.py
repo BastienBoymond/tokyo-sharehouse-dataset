@@ -5,7 +5,7 @@ class Chamber:
     fee : int = 0;
     number : int = 0;
     space : int = 0;
-    sexeAvailable : array[str] = []
+    sexeAvailable : str = "";
     asKey : bool = False;
     asDesk : bool = False;
     asChair : bool = False;
