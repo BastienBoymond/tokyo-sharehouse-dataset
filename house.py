@@ -1,4 +1,8 @@
+import array
+from chamber import Chamber
+
 class ShareHouse:
+    Chamber : array[Chamber] = []
     priceAverage : int = 0;
     FeeAverage : int = 0;
     NumberOfBed : int = 0;

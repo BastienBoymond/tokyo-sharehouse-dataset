@@ -1,8 +1,6 @@
 import array
-from house import ShareHouse
 
 class Chamber: 
-    house : ShareHouse = None;
     price : int = 0;
     fee : int = 0;
     number : int = 0;
