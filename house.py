@@ -6,7 +6,7 @@ class ShareHouse:
     url : str = "";
     university : array = [];
     Chamber : array = []
-    priceAverage : int = 0;
+    medianPrice : int = 0;
     FeeAverage : int = 0;
     NumberOfBed : int = 0;
     adress: str = "";
@@ -27,7 +27,23 @@ class ShareHouse:
         self.Region = regionName;
         soup = return_soup(self.url);
         rightDetailList = soup.find('table', class_='detailListArea').find_all('tr')
-        print(rightDetailList[0])
+        self.adress = rightDetailList[0].find('div', class_='labelDesc').text
+        print(rightDetailList[1].find('div', class_='month clearfix').text);
+        self.medianPrice = self.get_median_price(rightDetailList[1].find('div', class_='month clearfix').text)
+        print(self.medianPrice);
+
+    def get_median_price(self, text):
+        text = text.replace(',', '');
+        text = text.replace('\\', '');
+        text = text.replace(' ', '');
+        text = text.replace('permonth', '');
+        if "~" in text:
+            two_number = text.split('~');
+            print(two_number);
+            return int((int(two_number[0]) + int(two_number[1])) / 2);
+        else:
+            return int(text);
+
 
         
 
