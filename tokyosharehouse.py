@@ -23,8 +23,9 @@ class TokyoShareHouse:
             soup = return_soup(url + '/page:' + str(i))
             htmlcontent = soup.find_all('div', class_='lineupRight')
             for html in htmlcontent:
-                newHouse = ShareHouse("https://tokyosharehouse.com/" + html.find('a')['href'], self.allUniversity, region['name']);
-                self.allHouses.append(newHouse);
-                print(html.find('a')['href']);
+                if html.find('div', class_='contact-button-area').find('a').text == 'Available' or html.find('div', class_='contact-button-area').find('a').text == 'Available Soon':
+                    newHouse = ShareHouse("https://tokyosharehouse.com/" + html.find('a')['href'], self.allUniversity, region['name']);
+                    self.allHouses.append(newHouse);
+                    print(html.find('a')['href']);
             print(i);
             i += 1;
