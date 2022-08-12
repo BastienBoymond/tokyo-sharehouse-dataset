@@ -1,0 +1,400 @@
+[
+  {
+    "adress": "Advanced Institute of Industrial Technology",
+    "long": 139.77804963346165,
+    "lat": 35.61834455
+  },
+  {
+    "adress": "Aoyama Gakuin University",
+    "long": 139.71041617758044,
+    "lat": 35.6605744
+  },
+  {
+    "adress": "Asia University",
+    "long": 139.53450218393283,
+    "lat": 35.70599945
+  },
+  {
+    "adress": "Bunka Gakuen University",
+    "long": 139.69456863499892,
+    "lat": 35.685543249999995
+  },
+  {
+    "adress": "Bunkyo Gakuin University",
+    "long": 139.757361,
+    "lat": 35.718468
+  },
+  { "adress": "Chuo University", "long": 139.74866825528082, "lat": 35.708475 },
+  {
+    "adress": "Daito Bunka University",
+    "long": 139.66793337142758,
+    "lat": 35.782288199999996
+  },
+  {
+    "adress": "Gakushuin University",
+    "long": 139.70960562392307,
+    "lat": 35.71880725
+  },
+  {
+    "adress": "Gakushuin Women's College",
+    "long": 139.71354244183323,
+    "lat": 35.706857850000006
+  },
+  {
+    "adress": "Hitotsubashi University",
+    "long": 139.44392836941262,
+    "lat": 35.693795300000005
+  },
+  { "adress": "Hosei University", "long": 139.7406012, "lat": 35.6954153 },
+  {
+    "adress": "Hoshi University",
+    "long": 139.71106743926035,
+    "lat": 35.61917085
+  },
+  {
+    "adress": "International College for Postgraduate Buddhist Studies",
+    "long": 139.74113695045924,
+    "lat": 35.71157015
+  },
+  {
+    "adress": "Japan Lutheran College",
+    "long": 139.53570296582555,
+    "lat": 35.6885403
+  },
+  {
+    "adress": "Japan Women's University",
+    "long": 139.7205791666264,
+    "lat": 35.71676885
+  },
+  {
+    "adress": "Juntendo University",
+    "long": 139.76029363758,
+    "lat": 35.702247299999996
+  },
+  {
+    "adress": "Kaetsu University",
+    "long": 139.51583784713984,
+    "lat": 35.720695750000004
+  },
+  {
+    "adress": "Keio University",
+    "long": 139.74277067454523,
+    "lat": 35.64883905
+  },
+  {
+    "adress": "Kogakuin University",
+    "long": 139.69540095817055,
+    "lat": 35.6902784
+  },
+  {
+    "adress": "Kokugakuin University",
+    "long": 139.71160914178483,
+    "lat": 35.655653
+  },
+  {
+    "adress": "Kokushikan University",
+    "long": 139.6522303993375,
+    "lat": 35.649416450000004
+  },
+  {
+    "adress": "Komazawa University",
+    "long": 139.63576988600178,
+    "lat": 35.6340497
+  },
+  {
+    "adress": "Kunitachi College of Music",
+    "long": 139.41202686605777,
+    "lat": 35.73209305
+  },
+  { "adress": "Kyorin University", "long": 139.5669004, "lat": 35.6774485 },
+  {
+    "adress": "Kyoritsu Women's University",
+    "long": 139.75738096665435,
+    "lat": 35.693409
+  },
+  {
+    "adress": "Meiji Gakuin University",
+    "long": 139.7307328574281,
+    "lat": 35.637575549999994
+  },
+  {
+    "adress": "Meiji University",
+    "long": 139.7613917492846,
+    "lat": 35.6975029
+  },
+  {
+    "adress": "Meisei University",
+    "long": 139.408037260647,
+    "lat": 35.6444176
+  },
+  { "adress": "Mejiro University", "long": 139.6812976, "lat": 35.7168732 },
+  {
+    "adress": "Musashi University",
+    "long": 139.66737201494573,
+    "lat": 35.7366447
+  },
+  {
+    "adress": "Musashino Academia Musicae",
+    "long": 139.67217336919379,
+    "lat": 35.741534
+  },
+  {
+    "adress": "Musashino Art University",
+    "long": 139.44715220745354,
+    "lat": 35.7274995
+  },
+  {
+    "adress": "Musashino University",
+    "long": 139.54761800150752,
+    "lat": 35.71826915
+  },
+  {
+    "adress": "National Graduate Institute for Policy Studies",
+    "long": 139.72717498322652,
+    "lat": 35.66380035
+  },
+  {
+    "adress": "Nihon Bunka University",
+    "long": 139.66793337142758,
+    "lat": 35.782288199999996
+  },
+  { "adress": "Nihon University", "long": 139.7647246, "lat": 35.6976834 },
+  { "adress": "Nippon Medical School", "long": 139.7591797, "lat": 35.7215258 },
+  {
+    "adress": "Nippon Sport Science University",
+    "long": 139.64965526767662,
+    "lat": 35.62201035
+  },
+  {
+    "adress": "Ochanomizu University",
+    "long": 139.73118058112317,
+    "lat": 35.718741949999995
+  },
+  {
+    "adress": "Otsuma Women's University",
+    "long": 139.7427712506955,
+    "lat": 35.6909364
+  },
+  {
+    "adress": "Rikkyo University",
+    "long": 139.7026220570551,
+    "lat": 35.731323149999994
+  },
+  { "adress": "Rissho University", "long": 139.7078182, "lat": 35.5894973 },
+  { "adress": "Seijo University", "long": 139.5442913, "lat": 35.7044824 },
+  { "adress": "Seikei University", "long": 139.5730897, "lat": 35.7118165 },
+  {
+    "adress": "Seisen University",
+    "long": 139.72894136590907,
+    "lat": 35.6273942
+  },
+  {
+    "adress": "Senshu University",
+    "long": 139.75389634328744,
+    "lat": 35.6969092
+  },
+  {
+    "adress": "Shibaura Institute of Technology",
+    "long": 139.7950312131513,
+    "lat": 35.66053325
+  },
+  {
+    "adress": "Showa Pharmaceutical University",
+    "long": 139.4697973418988,
+    "lat": 35.55453425
+  },
+  {
+    "adress": "Showa University",
+    "long": 139.67610411382708,
+    "lat": 35.64427355
+  },
+  {
+    "adress": "Showa Women's University",
+    "long": 139.67610411382708,
+    "lat": 35.64427355
+  },
+  { "adress": "Sophia University", "long": 139.7321743691599, "lat": 35.68395 },
+  {
+    "adress": "Sugino Fashion College",
+    "long": 139.423075830227,
+    "lat": 35.6476762
+  },
+  {
+    "adress": "Taisho University",
+    "long": 139.72771684748324,
+    "lat": 35.742451200000005
+  },
+  {
+    "adress": "Takachiho University",
+    "long": 139.6381458503099,
+    "lat": 35.6827463
+  },
+  {
+    "adress": "Takushoku University",
+    "long": 139.28087243763878,
+    "lat": 35.6279257
+  },
+  {
+    "adress": "Tama Art University",
+    "long": 139.6362573318783,
+    "lat": 35.6141388
+  },
+  { "adress": "Tama University", "long": 139.6362573318783, "lat": 35.6141388 },
+  {
+    "adress": "Tamagawa University",
+    "long": 139.46872662923184,
+    "lat": 35.568012249999995
+  },
+  {
+    "adress": "Teikyo University",
+    "long": 139.71457482229832,
+    "lat": 35.7595187
+  },
+  {
+    "adress": "The University of Tokyo",
+    "long": 139.76056244111012,
+    "lat": 35.711163799999994
+  },
+  {
+    "adress": "Toho Gakuen School of Music",
+    "long": 139.5892251,
+    "lat": 35.6578683
+  },
+  { "adress": "Toho University", "long": 139.7238329, "lat": 35.570413 },
+  {
+    "adress": "Tokai University",
+    "long": 139.68453360080068,
+    "lat": 35.664554550000005
+  },
+  {
+    "adress": "Tokyo City University",
+    "long": 139.65106020708913,
+    "lat": 35.5981127
+  },
+  {
+    "adress": "Tokyo College of Music",
+    "long": 139.7144002,
+    "lat": 35.7230708
+  },
+  {
+    "adress": "Tokyo Denki University",
+    "long": 139.80661884465735,
+    "lat": 35.747853649999996
+  },
+  {
+    "adress": "Tokyo Fuji University",
+    "long": 139.70024078296726,
+    "lat": 35.7153584
+  },
+  {
+    "adress": "Tokyo Future University",
+    "long": 139.8170696208342,
+    "lat": 35.7431316
+  },
+  {
+    "adress": "Tokyo Gakugei University",
+    "long": 139.49235980752815,
+    "lat": 35.7062778
+  },
+  {
+    "adress": "Tokyo Institute of Technology",
+    "long": 139.6827406514703,
+    "lat": 35.605038050000005
+  },
+  {
+    "adress": "Tokyo Junshin University",
+    "long": 139.3338854,
+    "lat": 35.6935008
+  },
+  {
+    "adress": "Tokyo Kasei University",
+    "long": 139.72092526114733,
+    "lat": 35.7557455
+  },
+  {
+    "adress": "Tokyo Kasei-Gakuin University",
+    "long": 139.31111051593376,
+    "lat": 35.6094944
+  },
+  {
+    "adress": "Tokyo Medical and Dental University",
+    "long": 139.76423752946232,
+    "lat": 35.7015151
+  },
+  {
+    "adress": "Tokyo Medical University",
+    "long": 139.76423752946232,
+    "lat": 35.7015151
+  },
+  {
+    "adress": "Tokyo Metropolitan University",
+    "long": 139.38288045002523,
+    "lat": 35.62003705
+  },
+  {
+    "adress": "Tokyo University of Agriculture",
+    "long": 139.63227910526774,
+    "lat": 35.64183535
+  },
+  {
+    "adress": "Tokyo University of Agriculture and Technology",
+    "long": 139.51843965481308,
+    "lat": 35.699409
+  },
+  {
+    "adress": "Tokyo University of Foreign Studies",
+    "long": 139.5204338626078,
+    "lat": 35.6741728
+  },
+  {
+    "adress": "Tokyo University of Marine Science and Technology",
+    "long": 139.74821380719158,
+    "lat": 35.6267565
+  },
+  {
+    "adress": "Tokyo University of Science",
+    "long": 139.7426558,
+    "lat": 35.6995942
+  },
+  {
+    "adress": "Tokyo University of Technology",
+    "long": 139.3424269692968,
+    "lat": 35.6255289
+  },
+  {
+    "adress": "Tokyo University of the Arts",
+    "long": 139.80215698929388,
+    "lat": 35.74722905
+  },
+  {
+    "adress": "Tokyo Woman's Christian University",
+    "long": 139.59010675146214,
+    "lat": 35.71097215
+  },
+  {
+    "adress": "Tokyo Women's Medical University",
+    "long": 139.72030521669066,
+    "lat": 35.6983812
+  },
+  {
+    "adress": "Tokyo Zokei University",
+    "long": 139.33379684047455,
+    "lat": 35.616376
+  },
+  {
+    "adress": "Toyo Gakuen University",
+    "long": 139.75773193086263,
+    "lat": 35.704578049999995
+  },
+  { "adress": "Toyo University", "long": 139.7505853, "lat": 35.723417 },
+  {
+    "adress": "University of the Sacred Heart",
+    "long": 139.7198331718801,
+    "lat": 35.652281450000004
+  },
+  {
+    "adress": "Waseda University",
+    "long": 139.71972128895072,
+    "lat": 35.709179750000004
+  }
+]

@@ -13,7 +13,7 @@ class Chamber:
     asClimatisation : bool = False;
     asPrivatetap : bool = False;
     asTv : bool = False;
-    asWifi : bool = False;
+    asLan : bool = False;
     asPrivateKitchen : bool = False;
     asPrivateFridge : bool = False;
     asPrivateShower : bool = False;
@@ -22,4 +22,7 @@ class Chamber:
     asSomethingMore: bool = False;
     Remarks : str = "";
     Requirement : str = "";
-    isAvailable : bool = False;
+    isAvailable : str = "";
+
+    def __init__(self, chamber_soup):
+        print("newChamber")
