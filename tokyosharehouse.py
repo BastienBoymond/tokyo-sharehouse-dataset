@@ -26,14 +26,15 @@ class TokyoShareHouse:
                 if html.find('div', class_='contact-button-area').find('a').text == 'Available' or html.find('div', class_='contact-button-area').find('a').text == 'Available Soon':
                     newHouse = ShareHouse(int(''.join(x for x in  html.find('a')['href'] if x.isdigit())),"https://tokyosharehouse.com/" + html.find('a')['href'], self.allUniversity, region['name']);
                     self.allHouses.append(newHouse);
+                    print('House ' + str(newHouse.id) + ' created ' + str(len(self.allHouses[0].Chambers)) + ' chambers' + ' university ' + str(len(self.allHouses[0].university)));
             i += 1;
 
     def writeToFile(self, filename):
-        with open('tokyosharehouse.csv', 'w') as csvfile:
-            csvfile.write('idChamber,price,fee,space(m2),sexe,availablity,asKey,asDesk,asChair,asBed,asClimatisation,asPrivateBasin,asTv,asStorage,asLan,asPrivateKitchen,asPrivateFridge,asPrivateShower,asPrivateToilet,asSunaccess,asSomethingMore,')
-            csvfile.write('houseId,houseUrl,region,houseName,adress,longetide,latitude,medianPrice,medianFee,numberOfBed,nbShower,nbToilet,nbBath,nbKitchen,owner,')
+        with open('tokyosharehouse.csv', 'w', encoding="utf-8") as csvfile:
+            csvfile.write('idChamber;price;fee;space(m2);sexe;availablity;asKey;asDesk;asChair;asBed;asClimatisation;asPrivateBasin;asTv;asStorage;asLan;asPrivateKitchen;asPrivateFridge;asPrivateShower;asPrivateToilet;asSunaccess;asSomethingMore;')
+            csvfile.write('houseId;houseUrl;region;houseName;adress;longetide;latitude;medianPrice;medianFee;numberOfBed;nbShower;nbToilet;nbBath;nbKitchen;')
             for university in self.allUniversity:
-                csvfile.write("distanceTo" + university['adress'] + "(km),")
-            csvfile.write('remarks,Requirement\n')
+                csvfile.write("distanceTo" + university['adress'] + "(km);")
+            csvfile.write('owner\n')
             for house in self.allHouses:
                 house.writeToFile(csvfile);

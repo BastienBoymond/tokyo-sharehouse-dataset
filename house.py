@@ -1,5 +1,4 @@
 import array
-from turtle import pensize
 from chamber import Chamber
 from request_and_scrap import return_soup
 
@@ -7,7 +6,7 @@ class ShareHouse:
     id: int = 0;
     url : str = "";
     university : array = [];
-    Chambers : array = []
+    Chambers = []
     adress: str = "";
     houseName = "";
     medianPrice : int = 0;
@@ -35,13 +34,12 @@ class ShareHouse:
         self.adress = rightDetailList[0].find('div', class_='labelDesc').text
         self.medianPrice = self.get_median(rightDetailList[1].find('div', class_='month clearfix').text)
         self.medianFee =  self.get_median(rightDetailList[2].find('div', class_='labelDesc').text)
-        self.NumberOfBed = int(''.join(x for x in rightDetailList[5].find('div', class_='labelDesc').text if x.isdigit()))
+        self.NumberOfBed = int(''.join(x for x in rightDetailList[-1].find('div', class_='labelDesc').text if x.isdigit()))
         self.Owner = soup.find('div', class_='image').find('h4').text
         self.get_coordinates(self.adress);
         self.get_public_space(soup.find('div', class_='facility').find_all('li'));
         self.calculate_distance_to_university();
         self.create_every_chamber();
-        print(self.Owner)
         print("House " + str(id) + " created");
 
     def create_every_chamber(self):

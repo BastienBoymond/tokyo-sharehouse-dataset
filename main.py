@@ -11,9 +11,9 @@ else:
     for uni in university:
         uni = getUniCoord(uni);
 
-sharehouse = TokyoShareHouse(university)
 filename = input("Enter the filename output: ");
 filename += ".csv";
+sharehouse = TokyoShareHouse(university)
 
 sharehouse.writeToFile(filename);
 print("CSV Created with filename:" + filename);
