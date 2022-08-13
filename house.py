@@ -24,6 +24,7 @@ class ShareHouse:
 
     def __init__(self, id, url, university, regionName):
         print("Creating house " + str(id));
+        self.Chambers = [];
         self.id = id;
         self.url = url;
         self.university = university;
@@ -40,7 +41,6 @@ class ShareHouse:
         self.get_public_space(soup.find('div', class_='facility').find_all('li'));
         self.calculate_distance_to_university();
         self.create_every_chamber();
-        print("House " + str(id) + " created");
 
     def create_every_chamber(self):
         room_url = "https://tokyosharehouse.com/eng/house/room/" + str(self.id) + "/page:";
