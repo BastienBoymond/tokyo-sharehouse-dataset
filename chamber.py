@@ -65,8 +65,18 @@ class Chamber:
         else:
             self.sexeAvailable = "None"
 
-
     def clean_price(self, str):
         if str == "-":
             return 0;
         return int(str.replace(',', '').replace('¥', '').replace('\\', '').replace(' ', '').replace('\n', '').replace('￥', ''));
+
+    def writeToFile(self, csvFile, house):
+        csvFile.write(self.numberChamber + ',' + self.price + ',' + self.fee + ',' + self.space + ',' + self.sexeAvailable + ',' + self.Availablity + ',' + self.asKey + ',' 
+        + self.asDesk + ',' + self.asChair + ',' + self.asBed + ',' + self.asClimatisation + ',' + self.asPrivateBasin + ',' + self.asTv + ',' + self.asStorage + ',' 
+        + self.asLan + ',' + self.asPrivateKitchen + ',' + self.asPrivateFridge + ',' + self.asPrivateShower + ',' + self.asPrivateToilet + ',' + self.asSunaccess + ','
+        + self.asSomethingMore + ',' + house.id + ',' + house.url + ',' + house.region + ',' + house.name + ',' + house.adress + ',' + house.longetide + ',' + house.latitude 
+        + ',' + house.medianPrice + ',' + house.medianFee + ',' + house.numberOfBed + ',' + house.nbShower + ',' + house.nbToilet + ',' + house.nbBath + ',' + house.nbKitchen 
+        + ',' + house.owner + ',')
+        for university in house.university:
+            csvFile.write(university['distance'] + ',')
+        csvFile.write(self.Remarks + ',' +  self.Requirement + '\n')

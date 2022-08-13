@@ -1,3 +1,4 @@
+import csv
 from region import Region
 from house import ShareHouse
 from request_and_scrap import return_soup
@@ -26,3 +27,13 @@ class TokyoShareHouse:
                     newHouse = ShareHouse(int(''.join(x for x in  html.find('a')['href'] if x.isdigit())),"https://tokyosharehouse.com/" + html.find('a')['href'], self.allUniversity, region['name']);
                     self.allHouses.append(newHouse);
             i += 1;
+
+    def writeToFile(self, filename):
+        with open('tokyosharehouse.csv', 'w') as csvfile:
+            csvfile.write('idChamber,price,fee,space(m2),sexe,availablity,asKey,asDesk,asChair,asBed,asClimatisation,asPrivateBasin,asTv,asStorage,asLan,asPrivateKitchen,asPrivateFridge,asPrivateShower,asPrivateToilet,asSunaccess,asSomethingMore,')
+            csvfile.write('houseId,houseUrl,region,houseName,adress,longetide,latitude,medianPrice,medianFee,numberOfBed,nbShower,nbToilet,nbBath,nbKitchen,owner,')
+            for university in self.allUniversity:
+                csvfile.write("distanceTo" + university['adress'] + "(km),")
+            csvfile.write('remarks,Requirement\n')
+            for house in self.allHouses:
+                house.writeToFile(csvfile);

@@ -15,5 +15,5 @@ sharehouse = TokyoShareHouse(university)
 filename = input("Enter the filename output: ");
 filename += ".csv";
 
-file = open(filename, "w");
-file.close();
+sharehouse.writeToFile(filename);
+print("CSV Created with filename:" + filename);
