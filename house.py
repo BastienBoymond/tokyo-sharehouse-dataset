@@ -118,6 +118,6 @@ class ShareHouse:
             distance = round(R * c, 2)
             self.university.append({'adress': uni['adress'], 'distance': distance, 'lat': uni['lat'], 'long': uni['long']});
 
-    def writeToFile(self, csvFile):
+    def writeToFile(self, csvFile, onlyAvailable):
         for chamber in self.Chambers:
-            chamber.writeToFile(csvFile, self);
+            chamber.writeToFile(csvFile, onlyAvailable, self);

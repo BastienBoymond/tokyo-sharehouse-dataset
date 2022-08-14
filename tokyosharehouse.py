@@ -8,8 +8,10 @@ class TokyoShareHouse:
     allregions = []
     allUniversity = []
     allHouses = []
+    onlyAvailable = False
 
-    def __init__(self, university):
+    def __init__(self, university, onlyAvailable):
+        self.onlyAvailable = onlyAvailable
         self.allUniversity = university;
         region = Region();
         self.allregions = region.get_regions();
@@ -37,4 +39,4 @@ class TokyoShareHouse:
                 csvfile.write("distanceTo" + university['adress'] + "(km),")
             csvfile.write('owner\n')
             for house in self.allHouses:
-                house.writeToFile(csvfile);
+                house.writeToFile(csvfile, self.onlyAvailable);
