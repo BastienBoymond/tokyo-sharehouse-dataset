@@ -30,7 +30,7 @@ class Chamber:
     def __init__(self, chamber_soup):
         self.price = self.clean_price(chamber_soup.find('div', class_='value').text);
         self.fee = self.clean_price(chamber_soup.find('div', class_='price-row fee-area').find('div', class_='value').text);
-        self.numberChamber = chamber_soup.find('div', class_='room-num').text;
+        self.numberChamber = chamber_soup.find('div', class_='room-num').text.replace(',', '')
         self.get_space(chamber_soup);
         self.get_sexe(chamber_soup);
         self.asKey = chamber_soup.find('div', class_='icon key-on') != None;
@@ -79,7 +79,7 @@ class Chamber:
         return int(str.replace(',', '').replace('¥', '').replace('\\', '').replace(' ', '').replace('\n', '').replace('￥', ''));
 
     def writeToFile(self, csvFile, house):
-        csvFile.write(str(self.numberChamber) + ';' + str(self.price) + ';' + str(self.fee) + ';' + str(self.space) + ';' + str(self.sexeAvailable) + ';' + str(self.Availablity) + ';' + str(self.asKey) + ';' + str(self.asDesk) + ';' + str(self.asChair) + ';' + str(self.asBed) + ';' + str(self.asClimatisation) + ';' + str(self.asPrivateBasin) + ';' + str(self.asTv) + ';' + str(self.asStorage) + ';' + str(self.asLan) + ';' + str(self.asPrivateKitchen) + ';' + str(self.asPrivateFridge) + ';' + str(self.asPrivateShower) + ';' + str(self.asPrivateToilet) + ';' + str(self.asSunaccess) + ';' + str(self.asSomethingMore) + ';' + str(house.id) + ';' + str(house.url) + ';' + str(house.Region) + ';' + str(house.houseName) + ';' + str(house.adress) + ';' + str(house.longetide) + ';' + str(house.latitude) + ';' + str(house.medianPrice) + ';' + str(house.medianFee) + ';' + str(house.NumberOfBed) + ';' + str(house.NbShower) + ';' + str(house.NbToilet) + ';' + str(house.NbBath) + ';' + str(house.NbKitchen) + ';')
+        csvFile.write(str(self.numberChamber) + ',' + str(self.price) + ',' + str(self.fee) + ',' + str(self.space) + ',' + str(self.sexeAvailable) + ',' + str(self.Availablity) + ',' + str(self.asKey) + ',' + str(self.asDesk) + ',' + str(self.asChair) + ',' + str(self.asBed) + ',' + str(self.asClimatisation) + ',' + str(self.asPrivateBasin) + ',' + str(self.asTv) + ',' + str(self.asStorage) + ',' + str(self.asLan) + ',' + str(self.asPrivateKitchen) + ',' + str(self.asPrivateFridge) + ',' + str(self.asPrivateShower) + ',' + str(self.asPrivateToilet) + ',' + str(self.asSunaccess) + ',' + str(self.asSomethingMore) + ',' + str(house.id) + ',' + str(house.url) + ',' + str(house.Region) + ',' + str(house.houseName) + ',' + str(house.adress) + ',' + str(house.longetide) + ',' + str(house.latitude) + ',' + str(house.medianPrice) + ',' + str(house.medianFee) + ',' + str(house.NumberOfBed) + ',' + str(house.NbShower) + ',' + str(house.NbToilet) + ',' + str(house.NbBath) + ',' + str(house.NbKitchen) + ',')
         for university in house.university:
-            csvFile.write(str(university['distance']) + ';')
+            csvFile.write(str(university['distance']) + ',')
         csvFile.write(str(house.Owner) + '\n')

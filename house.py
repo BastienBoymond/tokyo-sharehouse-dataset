@@ -40,6 +40,10 @@ class ShareHouse:
         self.get_coordinates(self.adress);
         self.get_public_space(soup.find('div', class_='facility').find_all('li'));
         self.calculate_distance_to_university();
+        self.adress = self.adress.replace(',', '');
+        self.houseName = self.houseName.replace(',', '');
+        self.Owner = self.Owner.replace(',', '');
+        self.Region = self.Region.replace(',', '');
         self.create_every_chamber();
 
     def create_every_chamber(self):

@@ -30,11 +30,11 @@ class TokyoShareHouse:
             i += 1;
 
     def writeToFile(self, filename):
-        with open('tokyosharehouse.csv', 'w', encoding="utf-8") as csvfile:
-            csvfile.write('idChamber;price;fee;space(m2);sexe;availablity;asKey;asDesk;asChair;asBed;asClimatisation;asPrivateBasin;asTv;asStorage;asLan;asPrivateKitchen;asPrivateFridge;asPrivateShower;asPrivateToilet;asSunaccess;asSomethingMore;')
-            csvfile.write('houseId;houseUrl;region;houseName;adress;longetide;latitude;medianPrice;medianFee;numberOfBed;nbShower;nbToilet;nbBath;nbKitchen;')
+        with open(filename, 'w', encoding="utf-8") as csvfile:
+            csvfile.write('idChamber,price,fee,space(m2),sexe,availablity,asKey,asDesk,asChair,asBed,asClimatisation,asPrivateBasin,asTv,asStorage,asLan,asPrivateKitchen,asPrivateFridge,asPrivateShower,asPrivateToilet,asSunaccess,asSomethingMore,')
+            csvfile.write('houseId,houseUrl,region,houseName,adress,longetide,latitude,medianPrice,medianFee,numberOfBed,nbShower,nbToilet,nbBath,nbKitchen,')
             for university in self.allUniversity:
-                csvfile.write("distanceTo" + university['adress'] + "(km);")
+                csvfile.write("distanceTo" + university['adress'] + "(km),")
             csvfile.write('owner\n')
             for house in self.allHouses:
                 house.writeToFile(csvfile);
