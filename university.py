@@ -5,6 +5,7 @@ def getAllUniversity():
     import os.path
     import json
     if (os.path.exists("university.json")):
+        print("Load university.json");
         with open('university.json', 'r') as f:
             return json.load(f)
     else :

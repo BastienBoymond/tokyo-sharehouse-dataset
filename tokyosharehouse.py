@@ -28,7 +28,7 @@ class TokyoShareHouse:
                 if html.find('div', class_='contact-button-area').find('a').text == 'Available' or html.find('div', class_='contact-button-area').find('a').text == 'Available Soon':
                     newHouse = ShareHouse(int(''.join(x for x in  html.find('a')['href'] if x.isdigit())),"https://tokyosharehouse.com/" + html.find('a')['href'], self.allUniversity, region['name']);
                     self.allHouses.append(newHouse);
-                    print('House ' + str(newHouse.id) + ' created ' + str(len(self.allHouses[-1].Chambers)) + ' chambers');
+                    print("\33[42m" + 'House ' + str(newHouse.id) + ' created ' + str(len(self.allHouses[-1].Chambers)) + ' chambers' + "\33[0m");
             i += 1;
 
     def writeToFile(self, filename):

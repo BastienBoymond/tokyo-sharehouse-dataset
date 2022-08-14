@@ -23,7 +23,7 @@ class ShareHouse:
     Owner : str = "";
 
     def __init__(self, id, url, university, regionName):
-        print("Creating house " + str(id));
+        print("\33[35m" + "Creating house " + str(id) + "..." + "\33[0m");
         self.Chambers = [];
         self.id = id;
         self.url = url;
@@ -76,7 +76,13 @@ class ShareHouse:
     def get_coordinates(self, adress):
         import requests
         import json
-        info = json.loads(requests.get("https://nominatim.openstreetmap.org/search?q=" + adress + "&format=json").text);
+        info = requests.get("https://nominatim.openstreetmap.org/search?q=" + adress + "&format=json").text;
+        if info == None:
+            print("\33[41m","Error getting coordinates for " + self.houseName);
+            self.longetide = 0;
+            self.latitude = 0;
+            return;
+        info = json.loads(info);
         if len(info) > 0:
             self.longetide = float(info[0]['lon']);
             self.latitude = float(info[0]['lat']);
