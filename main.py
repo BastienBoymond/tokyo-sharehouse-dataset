@@ -3,13 +3,15 @@
 from tokyosharehouse import TokyoShareHouse
 from university import getAllUniversity, getUniCoord
 
-university = input("Enter list of universities you want distance to sharehouse (ex: Shibaura Institute of Technology,...,...) if you want all university press Enter : ").split(',')
+university_to_get = input("Enter list of universities you want distance to sharehouse (ex: Shibaura Institute of Technology,...,...) if you want all university press Enter : ").split(',')
+university = []
 
-if len(university) == 1 and university[0] == "":
+if len(university_to_get) == 1 and university_to_get[0] == "":
     university = getAllUniversity();
 else:
-    for uni in university:
+    for uni in university_to_get:
         uni = getUniCoord(uni);
+        university.append(uni)
 
 filename = input("Enter the filename output: ");
 filename += ".csv";
